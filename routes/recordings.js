@@ -12,7 +12,14 @@ router.get('/', recordingsCtrl.index);
 
 router.get('/new', recordingsCtrl.new);
 
+router.delete('/:id', recordingsCtrl.delete);
+
+router.put('/:id', recordingsCtrl.update);
+
 router.post('/', recordingsCtrl.create);
+
+router.get('/:id/edit', recordingsCtrl.edit);
+
 
 // Export router object
 module.exports = router;

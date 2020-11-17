@@ -14,9 +14,8 @@
 
     <h1>V.O. GO Recordings</h1>
 
-   <dev>
         <% recordings.forEach(function(recording){ %>
-      
+            <div>
             Title: <%= recording.title %>
             -
             Link To Recording: <%= recording.recording %>
@@ -28,10 +27,13 @@
             Food or Drink Intake: <%= recording.intake %>
             -
             Notes: <%= recording.notes %>
-      
+            <a href="/recordings/<%= recording._id %>/edit">Edit Recording</a>
+            <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST"><input type="submit" value="Delete Recording"></form>
+
+        </div>
+
         <%   }); %>
-   
-    </dev>
+
     <a href="/recordings/new">Add a recording</a>
 </body>
 

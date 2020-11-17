@@ -12,15 +12,15 @@
 <body>
 
     <header>
-        <a href="">Sign In</a>
+       
     </header>
 
-   <h1>Create a new recording</h1>
-    <form action="/recordings" method="POST">
-        <div>Title: <input type="text" class="title"></div>
-    <div>Recording:  <input type="text" class="recording"></div>
-        <div>Date: <input type="date" class="date"></div>
-    <div>Catetgory: <select name="dropdown" class="category">
+   <h1. Edit recording</h1>
+    <form action="/recordings/<%= recording._id %>?_method=PUT" method="POST">
+        <div>Title: <input type="text" class="title" value="<%= recording.title %>"></div>
+    <div>Recording:  <input type="text" class="recording"value="<%= recording.recording %>"></div>
+        <div>Date: <input type="date" class="date"value="<%= recording.date%>"></div>
+    <div>Catetgory: <select name="dropdown" class="category" value="<%= recording.category %>">
             <option value="Animation" selected>Animation</option>
             <option value="Commercial">Commercial</option>
             <option value="Narration">Narration</option>
@@ -32,19 +32,19 @@
             <option value="Promo">Promo</option>
             <option value="Announcing">Announcing</option>
         </select></div>
-    <div>Food/Water Intake: <input type="text" class="intake"></div>
-<div>Notes: <textarea name="notes" ty[e]="notes" cols="!0" rows="5"></textarea></div>
-        <input type="submit" value="GO">
-   
-  
+    <div>Food/Water Intake: <input type="text" class="intake" value="<%= recording.intake %>"></div>
+<div>Notes: <textarea name="notes" ty[e]="notes" cols="!0" rows="5"><%= recording.note %></textarea></div>
+        <input type="submit" value="EDIT">
+
     </form>
     <a href="/recordings">Cancel</a>
     <a href="/">Home</a>
 
+
     <footer>
         Copyright© All Rights Reserved 2020 V.O. GO
     </footer>
-  
+
 </body>
 
 </html>
