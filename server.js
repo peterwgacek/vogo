@@ -10,7 +10,8 @@ const app = express();
 const indexRouter = require('./routes/index')
 console.log(indexRouter);
 
-//Contact to the DB
+//Contact to the DB with require()
+require('./config/database');
 
 // Configure the app with app.set()
 app.set('view engine', 'ejs');
