@@ -24,4 +24,4 @@ const recordingSchema = new Schema({
 
 
 // export the result of compiliong schema into a model
-mongoose.model('Recording', recordingSchema);
+module.exports = mongoose.model('Recording', recordingSchema);
