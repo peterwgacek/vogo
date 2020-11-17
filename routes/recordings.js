@@ -5,11 +5,10 @@ const express = require('express');
 const router = express.Router();
 
 // Require controller module (index controller)
-const indexCtrl = require('../controllers/index');
-
+const recordingsCtrl = require('../controllers/recordings');
 
 // Define routes
-router.get('/', indexCtrl.index);
+router.get('/', recordingsCtrl.index);
 
 // Export router object
 module.exports = router;
