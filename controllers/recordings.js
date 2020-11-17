@@ -3,7 +3,10 @@ const Recording = require('../models/recording');
 
 // Setup up module.exports
 module.exports = {
-    index
+    index,
+    new: newRecording,
+    create,
+
 };
 
 // require db
@@ -15,3 +18,13 @@ function index(req,res) {
         res.render('recordings/index', {recordings})
     })
 };
+
+function newRecording(req, res) {
+    res.render('recordings/new');
+}
+
+function create(req,res){
+    Recording.create(req.body, function(err, recording){
+        res.redirect('/recordings')
+    });
+}

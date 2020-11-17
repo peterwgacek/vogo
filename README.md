@@ -4,7 +4,7 @@ V.O. GO is an app that allows a user to enter upload a recording and some inform
 
 Utilizing SoundCloud's API.
 
-I  was inspired to make this app after reading an online conversation between to Voice Over artists who didn't like their current phone app.
+I  was inspired to make this app after reading an online conversation between two Voice Over artists on a Facebook group who didn't like their current recording app. I posted  questions about what functionality and data they'd want to track.
 
 ## Getting Started
  [Click Here](vercel) to see the deployed app. ----insert further insitruction here-----

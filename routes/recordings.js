@@ -10,5 +10,9 @@ const recordingsCtrl = require('../controllers/recordings');
 // Define routes
 router.get('/', recordingsCtrl.index);
 
+router.get('/new', recordingsCtrl.new);
+
+router.post('/', recordingsCtrl.create);
+
 // Export router object
 module.exports = router;

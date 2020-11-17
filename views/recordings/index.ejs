@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.O. GO</title>
+</head>
+
+<body>
+    <header>
+        <a href="">Sign In</a>
+    </header>
+
+    <h1>V.O. GO Recordings</h1>
+
+   <dev>
+        <% recordings.forEach(function(recording){ %>
+      
+            Title: <%= recording.title %>
+            -
+            Link To Recording: <%= recording.recording %>
+            -
+            Date Recorded: <%= recording.date %>
+            -
+            Category: <%= recording.category %>
+            -
+            Food or Drink Intake: <%= recording.intake %>
+            -
+            Notes: <%= recording.notes %>
+      
+        <%   }); %>
+   
+    </dev>
+    <a href="/recordings/new">Add a recording</a>
+</body>
+
+</html>
