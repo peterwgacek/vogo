@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <%- include(`../nav.ejs`)%>
    <h1. Edit recording</h1>
  
     <form action="/recordings/<%= recording._id %>?_method=PUT" method="POST">
@@ -35,13 +35,7 @@
 
     </form>
 
-    <a href="/recordings">Cancel</a>
-    <a href="/">Home</a>
-
-
-    <footer>
-        Copyright© All Rights Reserved 2020 V.O. GO
-    </footer>
+    <%- include(`../footer`)%>
 
 </body>
 

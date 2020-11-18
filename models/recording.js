@@ -15,12 +15,15 @@ const recordingSchema = new Schema({
         type: Date,
         default: Date.Now
     },
-    // time: {
-    //     type: 
-    // },
-    dropdown: {type: String},
-    intake:  {type: String},
-    notes:  {type: String},
+    dropdown: {
+        type: String
+    },
+    intake: {
+        type: String
+    },
+    notes: {
+        type: String
+    },
 }, {
     timesstamps: true
 });

@@ -1,0 +1,37 @@
+:root {
+    --headerbackground-blue: #023C7C;
+    --body-blue: #285BA7;
+    --border-gray: #7D879B;
+    --body-gray: #32405B;
+        --primary-font: 'Bebas Neue';
+ 
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/*
+
+
+TODO:
+
+Stye out the Header/nav to make it nice across the page.
+
+Do the same with the footer, maybe add social links?
+
+Pick another font for the read of the page
+
+
+
+*/
+
+footer {
+
+}

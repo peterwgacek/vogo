@@ -2,7 +2,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
-const port = 3000;
+const port = process.env.PORT || '3000';
 
 // Set up express app
 const app = express();

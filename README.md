@@ -10,7 +10,7 @@ I  was inspired to make this app after reading an online conversation between tw
  [Click Here]() to see the deployed app. ----insert further insitruction here-----
 
 ## Screenshots
-![screenshot1](./imgs/scsh1.png)
+![screenshot1](public/imgs/scsh1.png)
 ![screenshot2](./imgs/scsh2.png)
 
 
@@ -28,9 +28,9 @@ I  was inspired to make this app after reading an online conversation between tw
 
 
 ## Wireframe: 
-![wireframe1](./imgs/home.png)
-![wireframe2](./imgs/create.png)
-![stylemockup](./imgs/colormock.png)
+![wireframe1](./public/imgs/home.png)
+![wireframe2](./public/imgs/create.png)
+![stylemockup](./public/imgs/colormock.png)
 
 ## User Stories:
 - AAU - I should be able to add a new voice recording
