@@ -11,10 +11,16 @@
 
 <body>
 
-    <h1>Welcome to V.O. GO</h1>
+    <%- include(`./nav.ejs`)%>
+
+    <h1>V.O. GO</h1>
+<img src="imgs/logo.png" alt="logo">
+
+    <p>Welcome to V.O. GO, you can look at your current database and select by genre, or add a new recording. Remember when adding a new recording you'll need your embedded Soundcloud link</p>
   
-    <a href="/recordings">Your current recordings</a>
-    <a href="/recordings/new">Add a recording</a>
+    <a href="/recordings">Your Recordings</a>
+    <a href="/recordings">Your Recordings by Genre</a>
+    <a href="/new">Add a New Recording</a>
 
     <footer>
         Copyright© All Rights Reserved 2020 V.O. GO
