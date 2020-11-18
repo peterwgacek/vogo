@@ -7,10 +7,10 @@ Utilizing SoundCloud's API.
 I  was inspired to make this app after reading an online conversation between two Voice Over artists on a Facebook group who didn't like their current recording app. I posted  questions about what functionality and data they'd want to track.
 
 ## Getting Started
- [Click Here](https://vo-go.herokuapp.com/) to see the deployed app. ----insert further insitruction here-----
+ [Click Here](https://vo-go.herokuapp.com/) to see the deployed app. Navigate per the links on the page and when adding a new recording you'll need an embeded Soundcloud link.
 
 ## Screenshots
-![screenshot1](public/imgs/scsh1.png)
+![screenshot1](.public/imgs/scsh1.png)
 ![screenshot2](./imgs/scsh2.png)
 
 

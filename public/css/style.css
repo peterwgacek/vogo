@@ -1,37 +1,78 @@
-:root {
+@import url('https://www.dafont.com/radion.font');
+@import url('https://www.ffonts.net/Radio-Space.font');
+
+root {
     --headerbackground-blue: #023C7C;
     --body-blue: #285BA7;
     --border-gray: #7D879B;
     --body-gray: #32405B;
-        --primary-font: 'Bebas Neue';
- 
+     --primary-font: 'adion';
+     --secondary-font:'Radio-Space'
 }
+
+/* GENERAL */
+
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
-nav{
+    body {
+        background: #285BA7;
+    }
+
+    nav, footer{
+        display: flex;
+        background:  #023C7C;
+        color:  #7D879B;
+    }
+
+    nav {
+        height: 100px;
+        justify-content: space-between;
+    }
+
+    footer {
+        height: 40px;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    
+/* CONTAINERS */
+
+.container {
+    width: 80vw;
+    height: 70vw;
+    margin: 50px auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #7D879B,
+      -1px -1px 10px #7D879B,
+      1px -1px 10px #7D879B,
+      -1px 1px 10px #7D879B;
   }
   
-/*
+  .sidebar {
+    width: 50%;
+    background: url('../public/imgs/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+  }
 
-
-TODO:
-
-Stye out the Header/nav to make it nice across the page.
-
-Do the same with the footer, maybe add social links?
-
-Pick another font for the read of the page
-
-
-
-*/
-
-footer {
-
-}
+  a {
+      color:  #7D879B;
+  }
+  
+  .navigation {
+    width: 50%;
+    background: #32405B;
+    border-radius: 0 10px 10px 0;
+    color: #7D879B;
+    border-color: #7D879B;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  
+/* FORMS */
