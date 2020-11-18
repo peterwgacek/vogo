@@ -15,10 +15,13 @@ module.exports = {
 // require db
 require('../config/database');
 
+//Require categories
+const Categories = require('../constants/categories');
+
 // Define controller actions
 function index(req,res) {
     Recording.find({}, function(err, recordings){
-        res.render('recordings/index', {recordings})
+        res.render('recordings/index', {recordings, Categories})
     })
 };
 

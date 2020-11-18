@@ -15,7 +15,7 @@
  
     <form action="/recordings/<%= recording._id %>?_method=PUT" method="POST">
         <div>Title: <input type="text" class="title" name="title" value="<%= recording.title %>"></div>
-    <div>Recording:  <input type="text" class="recording" name="recording" value="<%= recording.recording %>"></div>
+    <div>Embeded Recording:   <textarea name="recording" type ="text" cols="50" rows="20"><%= recording.recording %></textarea> ></div>
         <div>Date: <input type="date" class="date" name="date" value="<%= recording.date%>"></div>
     <div>Catetgory: <select name="dropdown" class="category" value="<%= recording.category %>">
             <option value="Animation" selected>Animation</option>
@@ -30,7 +30,7 @@
             <option value="Announcing">Announcing</option>
         </select></div>
     <div>Food/Water Intake: <input type="text" class="intake" name="intake" value="<%= recording.intake %>"></div>
-<div>Notes: <textarea name="notes" ty[e]="notes" cols="!0" rows="5"><%= recording.note %></textarea></div>
+<div>Notes: <textarea name="notes" type ="text" cols="40" rows="10"><%= recording.notes %></textarea></div>
         <input type="submit" value="EDIT">
 
     </form>

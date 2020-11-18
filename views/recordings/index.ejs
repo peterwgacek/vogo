@@ -9,12 +9,13 @@
 
 <body>
     <h1>V.O. GO Recordings</h1>
+    
     <div>
         <% recordings.forEach(function(recording){ %>
           
             Title: <%= recording.title %>
             -
-            Link To Recording: <%= new DOMParser().parseFromString(recording.recording, "text/xml") %>
+            Link To Recording: <%- recording.recording %>
             -
             Date Recorded: <%= recording.date %>
             -
@@ -25,7 +26,6 @@
             Notes: <%= recording.notes %>
             <a href="/recordings/<%= recording._id %>/edit">Edit Recording</a>
             <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST"><input type="submit" value="Delete Recording"></form>
-
 
         <%   }); %>
 
