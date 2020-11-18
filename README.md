@@ -7,7 +7,7 @@ Utilizing SoundCloud's API.
 I  was inspired to make this app after reading an online conversation between two Voice Over artists on a Facebook group who didn't like their current recording app. I posted  questions about what functionality and data they'd want to track.
 
 ## Getting Started
- [Click Here](vercel) to see the deployed app. ----insert further insitruction here-----
+ [Click Here]() to see the deployed app. ----insert further insitruction here-----
 
 ## Screenshots
 ![screenshot1](./imgs/scsh1.png)
@@ -24,7 +24,7 @@ I  was inspired to make this app after reading an online conversation between tw
 - JavaScript
 - jQuery
 - Procreate - wireframe and logo
-- The Movie Database API
+- Soundcloud API
 
 
 ## Wireframe: 

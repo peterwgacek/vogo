@@ -11,15 +11,12 @@
 
 <body>
 
-    <header>
-        <a href="">Sign In</a>
-    </header>
-
    <h1>Create a new recording</h1>
+
     <form action="/recordings" method="POST">
-        <div>Title: <input type="text" class="title"></div>
-    <div>Recording:  <input type="text" class="recording"></div>
-        <div>Date: <input type="date" class="date"></div>
+        <div>Title: <input type="text" class="title"name="title"></div>
+    <div>Recording:  <input type="text" class="recording" name="recording"></div>
+        <div>Date: <input type="date" class="date" name="date"></div>
     <div>Catetgory: <select name="dropdown" class="category">
             <option value="Animation" selected>Animation</option>
             <option value="Commercial">Commercial</option>
@@ -32,12 +29,11 @@
             <option value="Promo">Promo</option>
             <option value="Announcing">Announcing</option>
         </select></div>
-    <div>Food/Water Intake: <input type="text" class="intake"></div>
+    <div>Food/Water Intake: <input type="text" class="intake" name = "intake"></div>
 <div>Notes: <textarea name="notes" ty[e]="notes" cols="!0" rows="5"></textarea></div>
         <input type="submit" value="GO">
-   
-  
     </form>
+   
     <a href="/recordings">Cancel</a>
     <a href="/">Home</a>
 

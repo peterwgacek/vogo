@@ -14,7 +14,7 @@ router.get('/new', recordingsCtrl.new);
 
 router.delete('/:id', recordingsCtrl.delete);
 
-router.put('/:id', recordingsCtrl.update);
+router.put('/:id/', recordingsCtrl.update);
 
 router.post('/', recordingsCtrl.create);
 

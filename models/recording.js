@@ -15,13 +15,16 @@ const recordingSchema = new Schema({
         type: Date,
         default: Date.Now
     },
-    category: String,
-    intake: String,
-    notes: String,
+    // time: {
+    //     type: 
+    // },
+    dropdown: {type: String},
+    intake:  {type: String},
+    notes:  {type: String},
 }, {
     timesstamps: true
 });
 
 
-// export the result of compiliong schema into a model
+// export the result of compiling schema into a model
 module.exports = mongoose.model('Recording', recordingSchema);
