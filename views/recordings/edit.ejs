@@ -11,6 +11,9 @@
 
 <body>
     <%- include(`../nav.ejs`)%>
+    <div class="container">
+        <div class="sidebar"></div>
+        <div class="navigation">
    <h1. Edit recording</h1>
  
     <form action="/recordings/<%= recording._id %>?_method=PUT" method="POST">
@@ -34,6 +37,8 @@
         <input type="submit" value="EDIT">
 
     </form>
+</div>
+</div>
 
     <%- include(`../footer`)%>
 

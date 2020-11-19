@@ -4,6 +4,7 @@ const Recording = require('../models/recording');
 // Setup up module.exports
 module.exports = {
     index,
+    show,
     new: newRecording,
     delete: deleteRecording,
     create,
@@ -25,14 +26,21 @@ function index(req,res) {
     })
 };
 
-function deleteRecording(req, res){
-    Recording.findByIdAndDelete(req.params.id, function(err, deletedRecording){
-        res.redirect('/recordings');
+function show(req,res) {
+    Recording.findById(req.params.id, function(err, recording){
+        res.render('recordings/show', { Recording: 'Recording Details', recording
+    });
     });
 }
 
 function newRecording(req, res) {
     res.render('recordings/new');
+}
+
+function deleteRecording(req, res){
+    Recording.findByIdAndDelete(req.params.id, function(err, deletedRecording){
+        res.redirect('/recordings');
+    });
 }
 
 function update(req, res) {

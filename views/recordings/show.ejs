@@ -15,11 +15,9 @@
         <div class="sidebar"></div>
         <div class="navigation">
 
-            <h1>V.O. GO Recordings</h1>
+            <h1><%= recording.title %></h1>
 
             <div>
-                <% recordings.forEach(function(recording){ %>
-
                 Title: <%= recording.title %>
                 -
                 Link To Recording: <%- recording.recording %>
@@ -31,12 +29,9 @@
                 Food or Drink Intake: <%= recording.intake %>
                 -
                 Notes: <%= recording.notes %>
-                <a href="/recordings/<%= recording._id %>/show">Recording Details</a>
                 <a href="/recordings/<%= recording._id %>/edit">Edit Recording</a>
                 <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST"><input type="submit"
                         value="Delete Recording"></form>
-
-                <%   }); %>
 
             </div>
         </div>
