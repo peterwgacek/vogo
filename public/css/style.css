@@ -1,13 +1,13 @@
-@import url('https://www.dafont.com/radion.font');
+@import url('https://www.ffonts.net/radion.font');
 @import url('https://www.ffonts.net/Radio-Space.font');
 
-root {
+:root {
     --headerbackground-blue: #023C7C;
     --body-blue: #285BA7;
     --border-gray: #7D879B;
     --body-gray: #32405B;
-     --primary-font: 'adion';
-     --secondary-font:'Radio-Space'
+     --primary-font: 'radion';
+     --secondary-font: 'Radio-Space';
 }
 
 /* GENERAL */
@@ -19,15 +19,15 @@ root {
 
     body {
   
-        background: #285BA7;
-        
+        background:var(--body-blue);
+        font-family: var(--secondary-font);
     }
 
     nav, footer{
         display: flex;
-        background:  #023C7C;
-        color:  #7D879B;
-        font: 'radion';
+        background:  var(--headerbackground-blue);
+        color: var(--border-gray);
+        font-family: var(--primary-font);
     }
 
     img {
@@ -36,11 +36,11 @@ root {
         height: 30vw;
         width:  30vw;
         border: solid;
-        border-color: #7D879B;
-        box-shadow: 1px 1px 10px #7D879B,
-      -1px -1px 10px #7D879B,
-      1px -1px 10px #7D879B,
-      -1px 1px 10px #7D879B;
+        border-color: var(--border-gray);
+        box-shadow: 1px 1px 10px var(--border-gray),
+      -1px -1px 10px var(--border-gray),
+      1px -1px 10px var(--border-gray),
+      -1px 1px 10px var(--border-gray);
       
     }
 
@@ -49,23 +49,33 @@ root {
         justify-content: space-around;
         align-items: center;
         border-bottom: solid;
-        border-color: #7D879B;
-        box-shadow: 0px 0px 0px #7D879B,
-        0px 0px 40px #7D879B,
-        0px 0px 0px #7D879B,
-        0px 0px 0px #7D879B;
+        font-size: 40px;
+     
+        text-shadow: 4px 0  var(--border-gray);
+        letter-spacing:2px;
+        font-weight:bold;
+        border-color: var(--border-gray);
+        box-shadow: 0px 0px 0px var(--border-gray),
+        0px 0px 40px var(--border-gray),
+        0px 0px 0px var(--border-gray),
+        0px 0px 0px var(--border-gray);
     }
 
     footer {
         height: 40px;
-        align-items: flex-end;
+        align-items: center;
         justify-content: flex-end;
         border-top: solid;
-        border-color: #7D879B;
-        box-shadow: 0px 0px 0px #7D879B,
-        0px 0px 40px #7D879B,
-        0px -0px 0px #7D879B,
-        -0px 0px 0px #7D879B;
+        font-size: 20px;
+        border-color: var(--border-gray);
+        box-shadow: 0px 0px 0px var(--border-gray),
+        0px 0px 40px var(--border-gray),
+        0px -0px 0px var(--border-gray),
+        -0px 0px 0px var(--border-gray);
+    }
+
+    h1{
+        font-family: var(--primary-font);
     }
     
 /* CONTAINERS */
@@ -85,23 +95,26 @@ root {
     border-radius: 10px 0 0 10px;
   }  */
 
-  a {
-      color:  #7D879B;
+  a{
+      color:  var(--border-gray);
+      text-decoration: none;
+      font-family: var(--primary-font);
+      text-shadow: 1px 1px 2px black, 0 0 25px var(--body-blue), 0 0 5px var(--headerbackground-blue)
   }
   
   .navigation {
     width: 50%;
-    background: #32405B;
+    background: var(--body-gray);
     border-radius: 0 10px 10px 0;
-    color: #7D879B;
-    border-color: #7D879B;
+    color: var(--border-gray);
+    border-color: var(--border-gray);
     padding: 15px;
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px #7D879B,
-      -1px -1px 10px #7D879B,
-      1px -1px 10px #7D879B,
-      -1px 1px 10px #7D879B;
+    box-shadow: 1px 1px 10px var(--border-gray),
+      -1px -1px 10px var(--border-gray),
+      1px -1px 10px var(--border-gray),
+      -1px 1px 10px var(--border-gray);
     overflow: auto;
   }
    
