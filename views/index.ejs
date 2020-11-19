@@ -6,28 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='stylesheet' href='/css/style.css' />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="../imgs/icons/apple-touch-icon.png"> -->
+<link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
+<!-- <link rel="icon" type="image/png" sizes="16x16" href="../imgs/icons/favicon-16x16.png"> -->
+<link rel="manifest" href="/site.webmanifest">
     <title>V.O. GO</title>
 </head>
 
 <body>
 
     <%- include(`./nav`)%>
-
-   <img src='../imgs/logo.png' alt="logoimage">
+<!-- 
+   <img src='../imgs/logo.png' alt="logoimage" id="logo"> -->
     <div class="container">
         <div class="sidebar"></div>
         <div class="navigation">
 
             <h1>V.O. GO</h1>
-<p>
-            <h3>Welcome to V.O. GO, you can look at your current database and select by genre, or add a new recording.
-                Remember when adding a new recording you'll need your embedded Soundcloud link</h3>
-
-            <a href="/recordings">Your Recordings</a>
-            <a href="/recordings">Your Recordings by Genre</a>
-            <a href="recordings/new">Add a New Recording</a>
-
-        </p>
+            <br/>
+           
+            <br/>
+            <div class="homelinks">
+                <a href="/recordings">Recordings</a>
+                <a href="/recordings">Recordings by Genre</a>
+                <a href="recordings/new">Add Recording</a>
+            </div>
+            <br/>
+            <h3>Check out your current database, select your recordings by category, or add a new recording.
+                Remember when adding a new recording you'll need to follow these basic steps: </h3>
+                <br/>
+                <ol>
+                        <li>Head over to  <a href="http://soundcloud.com">SoundCloud</a> to the recording you want to upload</li>
+                        <li>
+                            Click the 'Share' button beneath the recording <img src="../imgs/tip1.png" alt="firsttip">
+                        </li>
+                        <li>
+                            On the pop-up click the 'Embed' link at the top then copy the code below and paste it in the "Embedded Recording" section. You can style your embed with some options SoundCloud gives you. <img src="../imgs/tip2.png" alt="secondtip">
+                        </li>
+                </ol>  
         </div>
     </div>
 

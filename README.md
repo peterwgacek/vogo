@@ -24,8 +24,10 @@ I  was inspired to make this app after reading an online conversation between tw
 - JavaScript
 - jQuery
 - Procreate - wireframe and logo
-- Soundcloud API
+- Soundcloud Embeds
 
+## Trello
+[Click Here][https://trello.com/b/eXZ7UyB4/project-two] to view my Trello board.
 
 ## Wireframe: 
 ![wireframe1](./public/imgs/home.png)
@@ -38,6 +40,6 @@ I  was inspired to make this app after reading an online conversation between tw
 - AAU - I should be able to edit and delete my recording or notes
 
 ## Stretch Goals/Future Goals:
-- Upload a sound file
+- Upload a sound file to FireDB
 - Add user/uthentication
 
