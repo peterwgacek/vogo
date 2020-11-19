@@ -24,7 +24,7 @@ function index(req,res) {
     Recording.find({}, function(err, recordings){
         res.render('recordings/index', {recordings, Categories})
     })
-};
+}
 
 function show(req,res) {
     Recording.findById(req.params.id, function(err, recording){
@@ -33,12 +33,16 @@ function show(req,res) {
     });
 }
 
-function show(req,res) {
-    Recording.findById(req.params.id, function(err, category){
-        res.render('recordings/category/:category', { Cateogry: 'Category', category
-    });
-    });
-}
+function category(req, res) {
+    // find all recordings 
+     recording.find({}, function(error, allRecordings) {
+     // allRecordings is an array so here we can use normal javascript menthods and code to manipulate it. Think about how you could use .filter() or a loop to create a new array with the data that matches your parameters. 
+     res.render('recordings/category/', {
+      // render the page and pass in the data you want to use
+      recordings: newArray
+     }) 
+    })
+    }
 
 
 function newRecording(req, res) {

@@ -1,16 +1,20 @@
 @import url('https://www.ffonts.net/radion.font');
+
 @font-face {
-    font-family: radioSpace;
-    src: url(Radiofb.ttf)
+    font-family: bigShoulders;
+    src: url(BigShouldersText-ExtraBold.ttf)
 }
+
+
 
 :root {
     --headerbackground-blue: #023C7C;
     --body-blue: #285BA7;
     --border-gray: #7D879B;
     --body-gray: #32405B;
-     --primary-font: 'radion';
-     --secondary-font: 'radioSpace';
+    --soundcloud-orange: #F65606;
+    --primary-font: 'radion';
+    --secondary-font: 'Big Shoulders Text ExtraBold';
 }
 
 /* GENERAL */
@@ -20,126 +24,137 @@
     margin: 0;
 }
 
-    body {
-        background:var(--body-blue);
-        font-family: var(--secondary-font);
-    }
+body {
+    background: var(--body-blue);
+    font-family: var(--secondary-font);
+}
 
-    nav, footer{
-        display: flex;
-        background:  var(--headerbackground-blue);
-        font-family: var(--primary-font);
+nav,
+footer {
+    display: flex;
+    background: var(--headerbackground-blue);
+    font-family: var(--primary-font);
 
-    }
+}
 
-    #logo {
-        display: flex;
-        border-radius: 50%;
-        height: 30vw;
-        width:  30vw;
-        border: solid;
+#logo {
+    display: flex;
+    border-radius: 50%;
+    opacity: 75%;
+    height: 60vw;
+    width: 60vw;
+    /* border: solid; */
+    position: absolute;
+
+
+
+    /* border-
         border-color: var(--border-gray);
         box-shadow: 1px 1px 10px var(--border-gray),
       -1px -1px 10px var(--border-gray),
       1px -1px 10px var(--border-gray),
-      -1px 1px 10px var(--border-gray);
-    }
+      -1px 1px 10px var(--border-gray); */
+}
 
-   
-    nav {
-        height: 100px;
-        justify-content: space-around;
-        align-items: center;
-        border-bottom: solid;
-        font-size: 40px;
-        letter-spacing:2px;
-        font-weight:bold;
-        border-color: var(--border-gray);
-        color:  var(--body-blue);
-        text-decoration: none;
-        font-family: var(--primary-font);
-        text-shadow: 0 0 10px #fff,
-        0 0 20px  #fff,
-        0 0 30px  #fff,
-        0 0 40px  var(--body-blue),
-        0 0 70px  var(--body-blue),
-        0 0 80px  var(--body-blue),
+
+nav {
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-color: var(--soundcloud-orange);
+    color: var(--body-blue);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px var(--body-blue),
+        0 0 70px var(--body-blue),
+        0 0 80px var(--body-blue),
         0 0 100px var(--body-blue),
         0 0 150px var(--body-blue);
-        box-shadow: 0px 0px 0px var(--border-gray),
+    box-shadow: 0px 0px 0px var(--border-gray),
         0px 0px 40px var(--border-gray),
         0px 0px 0px var(--border-gray),
         0px 0px 0px var(--border-gray);
-    }
+}
 
-    footer {
-        height: 40px;
-        color: var(--border-gray);
-        align-items: center;
-        justify-content: flex-end;
-        border-top: solid;
-        font-size: 20px;
-        border-color: var(--border-gray);
-        box-shadow: 0px 0px 0px var(--border-gray),
+footer {
+    height: 40px;
+    color: var(--border-gray);
+    align-items: center;
+    justify-content: flex-end;
+    border-top: solid;
+    font-size: 20px;
+    border-color: var(--soundcloud-orange);
+    box-shadow: 0px 0px 0px var(--border-gray),
         0px 0px 40px var(--border-gray),
         0px -0px 0px var(--border-gray),
         -0px 0px 0px var(--border-gray);
-    }
+}
 
-    h1{
-        font-family: var(--primary-font);
-    }
+h1 {
+    font-family: var(--primary-font);
+}
 
-    a{
-        color:  var(--body-blue);
-        text-decoration: none;
-        font-family: var(--primary-font);
-        text-shadow: 0 0 10px #fff,
-        0 0 20px  #fff,
-        0 0 30px  #fff,
-        0 0 40px  var(--body-blue),
-        0 0 70px  var(--body-blue),
-        0 0 80px  var(--body-blue),
+a {
+    color: var(--body-blue);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px var(--body-blue),
+        0 0 70px var(--body-blue),
+        0 0 80px var(--body-blue),
         0 0 100px var(--body-blue),
         0 0 150px var(--body-blue);
-    }
-  
+}
+
 a:hover {
-        -webkit-animation: neon 1.5s ease-in-out infinite alternate; 
-      }
-      @-webkit-keyframes neon {
-        from {
-          text-shadow: 0 0 10px #fff,
-                     0 0 20px  #fff,
-                     0 0 30px  #fff,
-                     0 0 40px  var(--body-blue),
-                     0 0 70px  var(--body-blue),
-                     0 0 80px  var(--body-blue),
-                     0 0 100px var(--body-blue),
-                     0 0 150px var(--body-blue);
-        }
-        to {
-          text-shadow: 0 0 5px #fff,
-                     0 0 10px #fff,
-                     0 0 15px #fff,
-                     0 0 20px var(--body-blue),
-                     0 0 35px var(--body-blue),
-                     0 0 40px var(--body-blue),
-                     0 0 50px var(--body-blue),
-                     0 0 75px var(--body-blue);
-        }
-      }
-   
-    a:active {
-      color: white;
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 40px var(--body-blue),
+            0 0 70px var(--body-blue),
+            0 0 80px var(--body-blue),
+            0 0 100px var(--body-blue),
+            0 0 150px var(--body-blue);
     }
-.container a{
-        color: var(--headerbackground-blue);
-        font-size: 17px;
-        text-shadow: 0 0 10px white,
+
+    to {
+        text-shadow: 0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px #fff,
+            0 0 20px var(--body-blue),
+            0 0 35px var(--body-blue),
+            0 0 40px var(--body-blue),
+            0 0 50px var(--body-blue),
+            0 0 75px var(--body-blue);
+    }
+}
+
+a:active {
+    color: white;
+}
+
+
+.container a {
+    color: var(--headerbackground-blue);
+    font-size: 17px;
+    text-shadow: 0 0 10px white,
 
 }
-    
+
 
 
 
@@ -151,16 +166,16 @@ a:hover {
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  /* .sidebar {
+/* .sidebar {
     width: 50%;
     background-image: './public/imgs/logo.png';
     border-radius: 10px;
     background-size: cover;
   } */
 
-  .navigation {
+.navigation {
     width: 50%;
     background: var(--body-gray);
     border-radius: 0 10px 10px 0;
@@ -170,26 +185,27 @@ a:hover {
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 1px 1px 10px var(--border-gray),
-      -1px -1px 10px var(--border-gray),
-      1px -1px 10px var(--border-gray),
-      -1px 1px 10px var(--border-gray);
+        -1px -1px 10px var(--border-gray),
+        1px -1px 10px var(--border-gray),
+        -1px 1px 10px var(--border-gray);
     overflow: auto;
-  }
-   
-  .homelinks {
+}
+
+.homelinks {
     display: flex;
     justify-content: space-around;
 }
 
 .foot {
-    display:flex;
+    display: flex;
     justify-content: space-around;
 }
 
 /* FORMS */
-form{
+form {
     font-family: var(--secondary-font);
 }
+
 form.delete {
     background-color: var(--headerbackground-blue);
     color: var(--border-gray);
@@ -201,12 +217,15 @@ form.delete {
     width: 100px;
 }
 
-input, textarea, option, select{
+input,
+textarea,
+option,
+select {
     border: 3px solid var(--border-gray);
     border-radius: 4px;
     background-color: var(--body-blue);
     font-weight: bold;
-  }
+}
 
 
 
@@ -223,8 +242,3 @@ option {
     text-decoration: uppercase;
     font-family: var(--primary-font);
 }
-
-
-  
-  
-

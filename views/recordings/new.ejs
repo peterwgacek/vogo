@@ -10,40 +10,41 @@
 </head>
 
 <body>
- 
+
+    <img src='../imgs/logo.png' alt="logoimage" id="logo">
 
     <%- include(`../nav.ejs`)%>
     <div class="container">
         <div class="sidebar"></div>
         <div class="navigation">
-   <h1>Create a new recording</h1>
+            <h1>Create a new recording</h1>
 
-    <form action="/recordings" method="POST">
-        <div>Title: <input type="text" class="title"name="title"></div>
-    <div>Embeded Recording:   <textarea name="recording" type ="text" cols="50" rows="20"></textarea></div>
-        <div>Date: <input type="date" class="date" name="date"></div>
-    <div>Catetgory: <select name="dropdown" class="category">
-            <option value="Animation" selected>Animation</option>
-            <option value="Commercial">Commercial</option>
-            <option value="Narration">Narration</option>
-            <option value="Audio Books">Audio Books</option>
-            <option value="Video Games">Video Games</option>
-            <option value="E-Learning">E-Learning</option>
-            <option value="Corporate">Corporate</option>
-            <option value="Trailers">Trailers</option>
-            <option value="Promo">Promo</option>
-            <option value="Announcing">Announcing</option>
-        </select></div>
-    <div>Food/Water Intake: <input type="text" class="intake" name = "intake"></div>
-<div>Notes: <textarea name="notes" type="text" cols="40" rows="10"></textarea></div>
-        <input type="submit" value="GO">
-    </form>
-   
-    <a href="/recordings">Cancel</a>
-</div>
-</div>
+            <form action="/recordings" method="POST">
+                <div>Title: <input type="text" class="title" name="title"></div>
+                <div>Embeded Recording: <textarea name="recording" type="text" cols="50" rows="20"></textarea></div>
+                <div>Date: <input type="date" class="date" name="date"></div>
+                <div>Catetgory: <select name="dropdown" class="category">
+                        <option value="Animation" selected>Animation</option>
+                        <option value="Commercial">Commercial</option>
+                        <option value="Narration">Narration</option>
+                        <option value="Audio Books">Audio Books</option>
+                        <option value="Video Games">Video Games</option>
+                        <option value="E-Learning">E-Learning</option>
+                        <option value="Corporate">Corporate</option>
+                        <option value="Trailers">Trailers</option>
+                        <option value="Promo">Promo</option>
+                        <option value="Announcing">Announcing</option>
+                    </select></div>
+                <div>Food/Water Intake: <input type="text" class="intake" name="intake"></div>
+                <div>Notes: <textarea name="notes" type="text" cols="40" rows="10"></textarea></div>
+                <input type="submit" value="GO">
+            </form>
 
-     <%- include(`../footer`)%>
+            <a href="/recordings">Cancel</a>
+        </div>
+    </div>
+
+    <%- include(`../footer`)%>
 </body>
 
 </html>
