@@ -39,11 +39,9 @@ footer {
 
 #logo {
     display: flex;
-    border-radius: 50%;
     opacity: 75%;
-    height: 60vw;
-    width: 60vw;
-    /* border: solid; */
+    height: 500px;
+    width: 500px;
     position: absolute;
 
 
@@ -147,16 +145,12 @@ a:active {
     color: white;
 }
 
-
 .container a {
     color: var(--headerbackground-blue);
     font-size: 17px;
     text-shadow: 0 0 10px white,
 
 }
-
-
-
 
 /* CONTAINERS */
 
@@ -168,12 +162,15 @@ a:active {
     justify-content: space-between;
 }
 
-/* .sidebar {
+.sidebar {
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:500px;
     width: 50%;
-    background-image: './public/imgs/logo.png';
-    border-radius: 10px;
-    background-size: cover;
-  } */
+    opacity: 76%;
+    background-image: url( '../imgs/logo.png');
+
+  }
 
 .navigation {
     width: 50%;
@@ -181,6 +178,7 @@ a:active {
     border-radius: 0 10px 10px 0;
     color: white;
     border-color: var(--border-gray);
+    border: solid;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 10px;
