@@ -26,12 +26,11 @@
                 Date Recorded: <%= recording.date %>
                 <br/>
                 Category: <%= recording.dropdown %>
-              
-                <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST" id="delete"><input type="submit"
-                        value="Delete"></form>
-                        <div class="foot">
+                <div class="foot">
                         <a href="/recordings/<%= recording._id %>/show">Details</a>
                         <a href="/recordings/<%= recording._id %>/edit">Edit</a>
+                        <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST" id="delete"><input type="submit"
+                            value="Delete" id="submit"></form>    
                     </div>
                 <%   }); %>
 

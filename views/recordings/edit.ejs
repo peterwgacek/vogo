@@ -15,7 +15,7 @@
         <div class="sidebar"></div>
         <div class="navigation">
    <h1. Edit recording</h1>
- 
+ <div id="color">
     <form action="/recordings/<%= recording._id %>?_method=PUT" method="POST">
         <div>Title: <input type="text" class="title" name="title" value="<%= recording.title %>"></div>
     <div>Embeded Recording:   <textarea name="recording" type ="text" cols="50" rows="20"><%= recording.recording %></textarea> ></div>
@@ -38,7 +38,7 @@
 <a href="/recordings/<%= recording._id %>/edit">Edit</a>
 <a href="/recordings">Cancel</a>
         <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST"><input type="submit"
-            value="Delete"></form>
+            value="Delete" id="submit"></form>
             </div>
     </form>
 </div>

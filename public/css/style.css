@@ -32,7 +32,7 @@ body {
 nav,
 footer {
     display: flex;
-    background: var(--headerbackground-blue);
+    background: var(--body-gray);
     font-family: var(--primary-font);
 
 }
@@ -43,15 +43,6 @@ footer {
     height: 500px;
     width: 500px;
     position: absolute;
-
-
-
-    /* border-
-        border-color: var(--border-gray);
-        box-shadow: 1px 1px 10px var(--border-gray),
-      -1px -1px 10px var(--border-gray),
-      1px -1px 10px var(--border-gray),
-      -1px 1px 10px var(--border-gray); */
 }
 
 
@@ -97,6 +88,14 @@ footer {
 
 h1 {
     font-family: var(--primary-font);
+    font-size: 50px;
+    color: #072451;
+    text-align: center;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+h3,ol,div {
+    color: white;
 }
 
 a {
@@ -176,8 +175,7 @@ a:active {
     width: 50%;
     background: var(--body-gray);
     border-radius: 0 10px 10px 0;
-    color: white;
-    border-color: var(--border-gray);
+    color: var(--soundcloud-orange);
     border: solid;
     padding: 15px;
     box-sizing: border-box;
@@ -202,18 +200,10 @@ a:active {
 /* FORMS */
 form {
     font-family: var(--secondary-font);
+    color: white;
 }
 
-form.delete {
-    background-color: var(--headerbackground-blue);
-    color: var(--border-gray);
-    font-family: var(--primary-font);
-    font-size: large;
-    border-radius: 30px;
-    text-transform: uppercase;
-    height: 50px;
-    width: 100px;
-}
+
 
 input,
 textarea,
@@ -223,6 +213,7 @@ select {
     border-radius: 4px;
     background-color: var(--body-blue);
     font-weight: bold;
+    color: var(--soundcloud-orange);
 }
 
 
@@ -239,4 +230,50 @@ option {
     height: 20px;
     text-decoration: uppercase;
     font-family: var(--primary-font);
+}
+
+input#submit{ 
+    border: 0;
+    font-size: 17px;
+    background: none;
+    font: var(--primary-font);
+    color: var(--soundcloud-orange);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px var(--body-blue),
+        0 0 70px var(--body-blue),
+        0 0 80px var(--body-blue),
+        0 0 100px var(--body-blue),
+        0 0 150px var(--body-blue)
+}
+
+input#submit:hover {
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 40px var(--body-blue),
+            0 0 70px var(--body-blue),
+            0 0 80px var(--body-blue),
+            0 0 100px var(--body-blue),
+            0 0 150px var(--body-blue);
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px #fff,
+            0 0 20px var(--body-blue),
+            0 0 35px var(--body-blue),
+            0 0 40px var(--body-blue),
+            0 0 50px var(--body-blue),
+            0 0 75px var(--body-blue);
+    }
 }
