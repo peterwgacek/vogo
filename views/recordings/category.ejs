@@ -15,21 +15,19 @@
         <div class="sidebar"></div>
         <div class="navigation">
 
-            <h1><%= recording.title %></h1>
+            <h1><%= recording.category %></h1>
 
-            <div>
-                <br/>
-                Title: <%= recording.title %>
-               <br/>
-                Link To Recording: <%- recording.recording %>
-                <br/>
-                Date Recorded: <%= recording.date %>
-                <br/>
-                Category: <%= recording.dropdown %>
-                <br/>
-                Food or Drink Intake: <%= recording.intake %>
-                <br/>
-                Notes: <%= recording.notes %>
+            <div><% Categories.map(c=><%= c %>) %> </div>
+    <div><h3>Animation</h3>  <% recordings.filter(recording => recording.dropdown === 'Animation').forEach(function(recording){ %>
+          
+        Title: <%= recording.title %>
+        -
+        Link To Recording: <%- recording.recording %>
+        -
+        Date Recorded: <%= recording.date %>
+    
+        <%   }); %>
+    </div>
                 <div class="foot">
                 <a href="/recordings/<%= recording._id %>/edit">Edit</a>
                 <a href="/recordings">Cancel</a>

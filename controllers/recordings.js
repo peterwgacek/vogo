@@ -33,6 +33,14 @@ function show(req,res) {
     });
 }
 
+function show(req,res) {
+    Recording.findById(req.params.id, function(err, category){
+        res.render('recordings/category/:category', { Cateogry: 'Category', category
+    });
+    });
+}
+
+
 function newRecording(req, res) {
     res.render('recordings/new');
 }

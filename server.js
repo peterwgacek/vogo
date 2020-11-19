@@ -17,6 +17,9 @@ require('./config/database');
 // Configure app with app.set()
 app.set('view engine', 'ejs');
 
+// Configure dotenv
+require('dotenv').config();
+
 // Mount middleware with app.use()
 app.use(morgan('dev'));
 app.use(methodOverride('_method'));

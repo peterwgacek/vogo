@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // Setup a shortcut variable
-const db =mongoose.connection;
+const db = mongoose.connection;
 
 // create a connectionURI variable and assign MongoDB Atlas URI
 const connectionURI = 'mongodb+srv://admin:MrGoodbytes@cluster0.vzazw.mongodb.net/vogo?retryWrites=true&w=majority'

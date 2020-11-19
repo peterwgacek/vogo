@@ -42,4 +42,5 @@ I  was inspired to make this app after reading an online conversation between tw
 ## Stretch Goals/Future Goals:
 - Upload a sound file to FireDB
 - Add user/uthentication
+- Add some Bootstrapping
 

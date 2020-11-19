@@ -36,6 +36,7 @@
 <div>Notes: <textarea name="notes" type ="text" cols="40" rows="10"><%= recording.notes %></textarea></div>
 <div class="foot">
 <a href="/recordings/<%= recording._id %>/edit">Edit</a>
+<a href="/recordings">Cancel</a>
         <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST"><input type="submit"
             value="Delete"></form>
             </div>
