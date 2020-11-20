@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V.O. GO</title>
     <link rel='stylesheet' href='/css/style.css' />
+    <link rel="shortcut icon" type="image/x-icon" href="/imgs/favicon.ico">
 </head>
 
 <body>
@@ -23,16 +24,17 @@
                 Link To Recording: <%- recording.recording %>
                 -
                 Date Recorded: <%= recording.date %>
-                
+
                      <div class="foot">
                         <a href="/recordings/<%= recording._id %>/show">Details</a>
                         <a href="/recordings/<%= recording._id %>/edit">Edit</a>
                         <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST" id="delete"><input type="submit"
                             value="Delete" id="submit"></form>    
+                            
                     </div>
-
-            
+                   
                 <%   }); %>
+                <a href="/recordings" id="cancel">Cancel</a>
             </div>
         </div>
     </div>

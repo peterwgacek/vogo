@@ -163,11 +163,12 @@ a:active {
 
 div#cats{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: 40px;
 
+    
 }
-
 
 .sidebar {
     background-position: center;
@@ -176,14 +177,9 @@ div#cats{
     width: 50%;
     opacity: 76%;
     background-image: url( '../imgs/logo.png');
-
   }
 
 .navigation {
-
-
-    flex-direction: column;
-    justify-content: flex-end;
     width: 50%;
     background: var(--body-gray);
     border-radius: 0 10px 10px 0;
