@@ -11,4 +11,4 @@ const categories = [
    "Announcing"
 ]
 
-module.exports = {categories};
+module.exports = categories;

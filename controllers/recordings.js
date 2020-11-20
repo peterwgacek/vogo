@@ -17,12 +17,12 @@ module.exports = {
 require('../config/database');
 
 //Require categories
-const Categories = require('../constants/categories');
+const categories = require('../constants/categories');
 
 // Define controller actions
 function index(req,res) {
     Recording.find({}, function(err, recordings){
-        res.render('recordings/index', {recordings, Categories})
+        res.render('recordings/index', {recordings, categories})
     })
 }
 
@@ -35,18 +35,19 @@ function show(req,res) {
 
 function category(req, res) {
     // find all recordings 
-     recording.find({}, function(error, allRecordings) {
+     Recording.find({}, function(error, allRecordings = []) {
      // allRecordings is an array so here we can use normal javascript menthods and code to manipulate it. Think about how you could use .filter() or a loop to create a new array with the data that matches your parameters. 
+     const filtered = allRecordings.filter(r => r.dropdown === req.params.category);
      res.render('recordings/category/', {
       // render the page and pass in the data you want to use
-      recordings: newArray
+      recordings: filtered
      }) 
     })
     }
 
 
 function newRecording(req, res) {
-    res.render('recordings/new');
+    res.render('recordings/new', { categories });
 }
 
 function deleteRecording(req, res){

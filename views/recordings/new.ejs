@@ -15,14 +15,17 @@
     <div class="container">
         <div class="sidebar"></div>
         <div class="navigation">
-            <h1>Create a new recording</h1>
+            <h1>Add new recording</h1>
 
             <form action="/recordings" method="POST">
                 <div>Title: <input type="text" class="title" name="title"></div>
-                <div>Embeded Recording: <textarea name="recording" type="text" cols="50" rows="20"></textarea></div>
+                <div>Embeded Recording: <br/><textarea name="recording" type="text" cols="50" rows="20"></textarea></div>
                 <div>Date: <input type="date" class="date" name="date"></div>
                 <div>Catetgory: <select name="dropdown" class="category">
-                        <option value="Animation" selected>Animation</option>
+                    <% categories.map((c, i) => { %>
+                        <option value="<%= c %>"><%= c %></option> 
+                    <% }); %>
+                        <!-- <option value="Animation" selected>Animation</option>
                         <option value="Commercial">Commercial</option>
                         <option value="Narration">Narration</option>
                         <option value="Audio Books">Audio Books</option>
@@ -31,15 +34,16 @@
                         <option value="Corporate">Corporate</option>
                         <option value="Trailers">Trailers</option>
                         <option value="Promo">Promo</option>
-                        <option value="Announcing">Announcing</option>
+                        <option value="Announcing">Announcing</option> -->
                     </select></div>
                 <div>Food/Water Intake: <input type="text" class="intake" name="intake"></div>
-                <div>Notes: <textarea name="notes" type="text" cols="40" rows="10"></textarea></div>
-                
-                <input type="submit" value="GO" id="inputStyle">
+                <div>Notes: <br/><textarea name="notes" type="text" cols="40" rows="10"></textarea></div>
+                <div class="foot">
+                <input type="submit" value="GO" id="submit"> 
+                <a href="/recordings">Cancel</a>
+                </div>
             </form>
 
-            <a href="/recordings">Cancel</a>
         </div>
     </div>
 

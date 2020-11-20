@@ -13,8 +13,8 @@
     <div class="container">
         <div class="sidebar"></div>
         <div class="navigation">
-
-            <h1>V.O. GO Recordings</h1>
+            <%= categories.map(c => c) %>
+            <h1>Recordings</h1>
 
             <div>
                 <% recordings.forEach(function(recording){ %>

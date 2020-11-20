@@ -74,7 +74,7 @@ nav {
 
 footer {
     height: 40px;
-    color: var(--border-gray);
+    color: var(--body-blue);
     align-items: center;
     justify-content: flex-end;
     border-top: solid;
@@ -211,6 +211,7 @@ option,
 select {
     border: 3px solid var(--border-gray);
     border-radius: 4px;
+    font: var(--secondary-font);
     background-color: var(--body-blue);
     font-weight: bold;
     color: var(--soundcloud-orange);
