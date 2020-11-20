@@ -17,12 +17,12 @@
             <!-- <%= categories.map(c => c) %> -->
             <h1>Categories</h1>
             <% categories.forEach(function(category){ %>
-                <div id="cats"><a href="/recordings/category/<%= category %>/show"><%= category %></a></div>
-                
+            <div id="cats"><a href="/recordings/category/<%= category %>/show"><%= category %></a></div>
+
             <% }) %>
-         
-            </div>
+
         </div>
+    </div>
     </div>
 
     <%- include(`../footer`)%>

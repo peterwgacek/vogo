@@ -1,6 +1,5 @@
-
 module.exports = {
-        index
+    index
 };
 
 // Require a Model

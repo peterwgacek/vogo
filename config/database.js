@@ -15,12 +15,11 @@ mongoose.connect(connectionURI, {
 });
 
 // Setup a listner to alert us when we're connected
-db.on('connected', function() {
+db.on('connected', function () {
     console.log(`Connected to MongoDB on ${db.host}:${db.port}`)
 })
 
 // Setup an error alert
-db.on('error', function(error ){
+db.on('error', function (error) {
     console.log(`Enncountered the following error:  ${error.message}`);
 });
-

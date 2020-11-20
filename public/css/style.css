@@ -94,7 +94,9 @@ h1 {
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
-h3,ol,div {
+h3,
+ol,
+div {
     color: white;
 }
 
@@ -167,23 +169,23 @@ a:active {
     justify-content: space-between;
 }
 
-div#cats{
+div#cats {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px;
 
-    
+
 }
 
 .sidebar {
     background-position: center;
-    background-repeat:no-repeat;
-    background-size:500px;
+    background-repeat: no-repeat;
+    background-size: 500px;
     width: 50%;
     opacity: 76%;
-    background-image: url( '../imgs/logo.png');
-  }
+    background-image: url('../imgs/logo.png');
+}
 
 .navigation {
     width: 50%;
@@ -247,7 +249,7 @@ option {
     font-family: var(--primary-font);
 }
 
-input#submit{ 
+input#submit {
     border: 0;
     font-size: 17px;
     background: none;

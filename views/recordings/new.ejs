@@ -20,18 +20,19 @@
 
             <form action="/recordings" method="POST">
                 <div>Title: <input type="text" class="title" name="title"></div>
-                <div>Embeded Recording: <br/><textarea name="recording" type="text" cols="50" rows="20"></textarea></div>
+                <div>Embeded Recording: <br /><textarea name="recording" type="text" cols="50" rows="20"></textarea>
+                </div>
                 <div>Date: <input type="date" class="date" name="date"></div>
                 <div>Catetgory: <select name="dropdown" class="category">
-                    <% categories.map(function(c, i){ %>
-                        <option value="<%= c %>"><%= c %></option> 
-                    <% }); %>
+                        <% categories.map(function(c, i){ %>
+                        <option value="<%= c %>"><%= c %></option>
+                        <% }); %>
                     </select></div>
                 <div>Food/Water Intake: <input type="text" class="intake" name="intake"></div>
-                <div>Notes: <br/><textarea name="notes" type="text" cols="40" rows="10"></textarea></div>
+                <div>Notes: <br /><textarea name="notes" type="text" cols="40" rows="10"></textarea></div>
                 <div class="foot">
-                <input type="submit" value="GO" id="submit"> 
-                <a href="/recordings">Cancel</a>
+                    <input type="submit" value="GO" id="submit">
+                    <a href="/recordings">Cancel</a>
                 </div>
             </form>
 
