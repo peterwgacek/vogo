@@ -10,7 +10,7 @@ module.exports = {
     create,
     edit,
     update,
-
+    category
 };
 
 // require db
@@ -35,15 +35,16 @@ function show(req,res) {
 
 function category(req, res) {
     // find all recordings 
-     Recording.find({}, function(error, allRecordings = []) {
+     Recording.find({}, function(error, allRecordings){
      // allRecordings is an array so here we can use normal javascript menthods and code to manipulate it. Think about how you could use .filter() or a loop to create a new array with the data that matches your parameters. 
      const filtered = allRecordings.filter(r => r.dropdown === req.params.category);
-     res.render('recordings/category/', {
+     res.render('recordings/category', {
       // render the page and pass in the data you want to use
-      recordings: filtered
-     }) 
+      recordings: filtered || [],
+      category: req.params.category
+     })
     })
-    }
+}
 
 
 function newRecording(req, res) {

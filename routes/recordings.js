@@ -14,7 +14,7 @@ router.get('/new', recordingsCtrl.new);
 
 router.get('/:id/show', recordingsCtrl.show);
 
-router.get('/category/:category', recordingsCtrl.show);
+router.get('/category/:category/show', recordingsCtrl.category);
 
 router.delete('/:id', recordingsCtrl.delete);
 

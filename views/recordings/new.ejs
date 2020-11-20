@@ -22,19 +22,9 @@
                 <div>Embeded Recording: <br/><textarea name="recording" type="text" cols="50" rows="20"></textarea></div>
                 <div>Date: <input type="date" class="date" name="date"></div>
                 <div>Catetgory: <select name="dropdown" class="category">
-                    <% categories.map((c, i) => { %>
+                    <% categories.map(function(c, i){ %>
                         <option value="<%= c %>"><%= c %></option> 
                     <% }); %>
-                        <!-- <option value="Animation" selected>Animation</option>
-                        <option value="Commercial">Commercial</option>
-                        <option value="Narration">Narration</option>
-                        <option value="Audio Books">Audio Books</option>
-                        <option value="Video Games">Video Games</option>
-                        <option value="E-Learning">E-Learning</option>
-                        <option value="Corporate">Corporate</option>
-                        <option value="Trailers">Trailers</option>
-                        <option value="Promo">Promo</option>
-                        <option value="Announcing">Announcing</option> -->
                     </select></div>
                 <div>Food/Water Intake: <input type="text" class="intake" name="intake"></div>
                 <div>Notes: <br/><textarea name="notes" type="text" cols="40" rows="10"></textarea></div>

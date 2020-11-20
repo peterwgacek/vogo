@@ -13,27 +13,12 @@
     <div class="container">
         <div class="sidebar"></div>
         <div class="navigation">
-            <%= categories.map(c => c) %>
-            <h1>Recordings</h1>
-
-            <div>
-                <% recordings.forEach(function(recording){ %>
-                    <br/>
-                Title: <%= recording.title %>
-               <br/>
-                Link To Recording: <%- recording.recording %>
-                <br/>
-                Date Recorded: <%= recording.date %>
-                <br/>
-                Category: <%= recording.dropdown %>
-                <div class="foot">
-                        <a href="/recordings/<%= recording._id %>/show">Details</a>
-                        <a href="/recordings/<%= recording._id %>/edit">Edit</a>
-                        <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST" id="delete"><input type="submit"
-                            value="Delete" id="submit"></form>    
-                    </div>
-                <%   }); %>
-
+            <!-- <%= categories.map(c => c) %> -->
+            <h1>Categories</h1>
+            <% categories.forEach(function(category){ %>
+                <div id="cats"><a href="/recordings/category/<%= category %>/show"><%= category %></a></div>
+            <% }) %>
+         
             </div>
         </div>
     </div>

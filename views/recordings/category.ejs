@@ -14,24 +14,24 @@
         <div class="sidebar"></div>
         <div class="navigation">
 
-            <h1><%= recording.category %></h1>
-
-            <div><% Categories.map(c=><%= c %>) %> </div>
+            <h1><%= category %></h1>
             <div>
-                <h3>Animation</h3>
-                <% recordings.filter(recording => recording.dropdown === 'Animation').forEach(function(recording){ %>
+                <% recordings.forEach(function(recording){ %>
 
                 Title: <%= recording.title %>
                 -
                 Link To Recording: <%- recording.recording %>
                 -
                 Date Recorded: <%= recording.date %>
-                <div class="foot">
-                    <a href="/recordings/<%= recording._id %>/show">Details</a>
-                    <a href="/recordings/<%= recording._id %>/edit">Edit</a>
-                    <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST" id="delete"><input
-                            type="submit" value="Delete" id="submit"></form>
-                </div>
+                
+                     <div class="foot">
+                        <a href="/recordings/<%= recording._id %>/show">Details</a>
+                        <a href="/recordings/<%= recording._id %>/edit">Edit</a>
+                        <form action="/recordings/<%= recording._id%>?_method=DELETE" method="POST" id="delete"><input type="submit"
+                            value="Delete" id="submit"></form>    
+                    </div>
+
+            
                 <%   }); %>
             </div>
         </div>
